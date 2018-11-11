@@ -1,0 +1,15 @@
+<resources>
+  <string name="app_name">StashChallenge</string>
+
+
+  <string name="getty_base_url">https://us-central1-stashandroidchallenge.cloudfunctions.net/api/</string>
+  <string name="getty_api_key">a1a4508882ae6599e5cc4ed225f3c442</string>
+
+  <string name="search_hint">Search Phrase</string>
+  <string name="metadata_title_format">%1$s by %2$s</string>
+  <string name="error_message">Oops! Something went wrong</string>
+
+  <string name="id">id</string>
+  <string name="url">url</string>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_height="match_parent"
+  android:layout_width="match_parent"
+  android:orientation="vertical"
+  >
+
+  <ImageView
+    android:adjustViewBounds="true"
+    android:id="@+id/image_view"
+    android:layout_height="160dp"
+    android:layout_width="match_parent"
+    android:scaleType="centerCrop"
+    />
+
+  <TextView
+    android:gravity="center_horizontal"
+    android:id="@+id/title_view"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:visibility="gone"
+    tools:text="Art by Artist"
+    />
+
+  <include
+    layout="@layout/loading_view"
+    android:id="@+id/loading"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    />
+
+  <include
+    layout="@layout/error_view"
+    android:id="@+id/error"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    />
+
+  <LinearLayout
+    android:id="@+id/similar_image_item_linear_layout"
+    android:layout_height="112dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="16dp"
+    android:visibility="gone"
+    >
+
+    <ImageView
+      android:id="@+id/similar_image_view1"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:scaleType="centerCrop"
+      />
+
+
+    <ImageView
+      android:id="@+id/similar_image_view2"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:scaleType="centerCrop"
+      />
+
+
+    <ImageView
+      android:id="@+id/similar_image_view3"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:scaleType="centerCrop"
+      />
+  </LinearLayout>
+
+  <include
+    layout="@layout/loading_view"
+    android:id="@+id/similar_image_item_loading"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    />
+
+  <include
+    layout="@layout/error_view"
+    android:id="@+id/similar_image_item_error"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    />
+
+</LinearLayout>
